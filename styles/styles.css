@@ -1,0 +1,293 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+ }
+
+.wrapper {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 500px 0 500px;
+    background: #235a88;
+}
+
+form {
+    background: white;
+    border-radius: 5px;
+    padding: 40px 40px 30px 30px;
+    width: 90%;
+    height: 550px;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.sub {
+    font-size: 0.8rem;
+}
+
+#nameValue {
+    margin: 0 0 20px 0;
+    width: 70%;
+    height: 25px;
+}
+
+label {
+    display: block;
+    font-size: 25px;
+}
+
+p {
+    font-size: 25px;
+}
+
+#list {
+    height: 36vh;
+    width: 70%;
+    border: grey 1px solid;
+    padding-left: 10px;
+}
+
+button {
+    cursor: pointer;
+    padding: 3px;
+    gap: 40px;
+    width: 92px;
+    border-radius: 5px;
+    background-image: linear-gradient(to bottom, white, #aeaeae);
+}
+
+.buttonAdd {
+    margin-left: 40px;
+    padding: 2px 2px 2px 2px;
+    width: 45px;
+}
+
+.buttonGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 80px;
+}
+
+.buttonDel {
+    width: 60px;
+    margin-top: 20px;
+}
+
+.buttonDel::after {
+    content: "To delete press button and choose items";
+    position: absolute;
+    left: 50%;
+    top: -40px;
+    transform: translateX(-50%);
+    background: #333;
+    color: #fff;
+    padding: 6px 12px;
+    border-radius: 4px;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s;
+    font-size: 14px;
+    z-index: 10;
+}
+
+.buttonDel:hover::after {
+    opacity: 1;
+}
+
+.sortGroup {
+    display: flex;
+    gap: 40px;
+}
+
+@media (min-width: 1201px) and (max-width: 1530px) {
+    .wrapper {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 280px 0 280px ;
+    }
+
+    form {
+        background: white;
+        border-radius: 5px;
+        height: 550px;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+    .wrapper {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 280px 0 280px ;
+    }
+
+    form {
+        border-radius: 5px;
+        height: 550px;
+    }
+
+    #list {
+        height: 36vh;
+        width: 70%;
+        border: grey 1px solid;
+        padding-left: 10px;
+    }
+
+}
+
+@media (min-width: 769px) and (max-width: 1224px) {
+    .wrapper {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 80px 0 80px ;
+    }
+
+    form {
+        border-radius: 5px;
+        height: 550px;
+    }
+
+    #list {
+        height: 36vh;
+        width: 70%;
+        border: grey 1px solid;
+        padding-left: 10px;
+    }
+
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .wrapper {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 70px 0 70px ;
+     }
+
+    form {
+        border-radius: 5px;
+        height: 550px;
+    }
+
+    #list {
+        height: 36vh;
+        width: 70%;
+        border: grey 1px solid;
+        padding-left: 10px;
+    }
+
+}
+
+@media (min-width: 413px) and (max-width: 479px) {
+    .wrapper {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 0 0 0 ;
+    }
+
+    form {
+        border-radius: 5px;
+        height: 100%;
+    }
+
+    h1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 40px;
+        margin-bottom: 0;
+    }
+
+    label {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 50px;
+    }
+
+    #nameValue {
+        margin: 0 0 20px 0;
+        width: 100%;
+        height: 80px;
+        font-size: 50px;
+    }
+
+    .buttonAdd {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 0;
+        padding: 0 0 0 0;
+        width: 100%;
+        height: 60px;
+        font-size: 50px;
+    }
+
+    p {
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 40px;
+    }
+
+    #list {
+        height: 36vh;
+        width: 100%;
+        border: grey 1px solid;
+        padding-left: 10px;
+    }
+
+    .buttonGroup {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .sortGroup {
+        gap: 40px;
+        display: inline;
+    }
+
+    .sort {
+        width: 37.2vh;
+        height: 60px;
+        padding: 3px;
+        font-size: 40px;
+        border-radius: 5px;
+        background-image: linear-gradient(to bottom, white, #aeaeae);
+    }
+
+    button {
+        cursor: pointer;
+        padding: 3px;
+        gap: 40px;
+        width: 100%;
+        border-radius: 5px;
+        background-image: linear-gradient(to bottom, white, #aeaeae);
+    }
+    .buttonDel {
+        width: 37.2vh;
+        height: 60px;
+        font-size: 40px;
+        margin-top: 20px;
+   }
+}
+
